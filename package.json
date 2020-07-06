@@ -1,0 +1,20 @@
+{
+  "name": "js-utility-functions",
+  "version": "1.0.0",
+  "description": "Native implementation of lodash utility functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src/"
+  },
+  "keywords": [
+    "javascript",
+    "lodash",
+    "utility"
+  ],
+  "author": "Muhammad Lahin",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
