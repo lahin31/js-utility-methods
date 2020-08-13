@@ -1,3 +1,7 @@
+/**
+ * lodash chunk-array method's native implementation
+ */
+
 let arr = ["a", "b", "c", "d", "e"];
 
 function chunk(arr, size) {

@@ -1,3 +1,7 @@
+/**
+ * lodash dropRight method's native implementation
+ */
+
 const values = [1, 2, 3];
 
 function dropRight(arr, n = 1) {

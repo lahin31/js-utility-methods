@@ -1,6 +1,7 @@
 /**
  * lodash pull method's native implementation
  */
+
 const array = ["a", "b", "c", "a", "b", "c"];
 
 const pull = (arr, ...values) => {

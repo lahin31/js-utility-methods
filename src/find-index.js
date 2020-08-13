@@ -1,3 +1,7 @@
+/**
+ * lodash findIndex method's native implementation
+ */
+
 const users = [
   { user: "barney", active: false },
   { user: "fred", active: false },

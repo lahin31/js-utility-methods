@@ -1,3 +1,7 @@
+/**
+ * lodash fill method's native implementation
+ */
+
 let arr = [1, 2, 2];
 
 const fill = (arr, value) => arr.fill(value); // fill is a prototype method

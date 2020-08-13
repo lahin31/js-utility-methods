@@ -1,5 +1,5 @@
 /**
- * this is not exactly a lodash method
+ * this is not completely a lodash method, but similar to merge method
  */
 
 let object = {

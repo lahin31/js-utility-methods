@@ -1,3 +1,7 @@
+/**
+ * lodash drop method's native implementation
+ */
+
 let values = [1, 2, 3];
 
 function drop(arr, n = 1) {

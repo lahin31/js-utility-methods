@@ -1,3 +1,7 @@
+/**
+ * lodash dropRightWhile method's native implementation
+ */
+
 var users = [
   { user: "barney", active: true },
   { user: "fred", active: false },

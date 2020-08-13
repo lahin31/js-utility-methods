@@ -1,3 +1,7 @@
+/**
+ * lodash findLastIndex method 's native implementation
+ */
+
 const users = [
   { user: "barney", active: true },
   { user: "fred", active: false },
