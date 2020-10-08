@@ -9,7 +9,7 @@ function duplicate(n) {
 }
 
 function flatMap(arr) {
-  return arr.map((item) => duplicate(item)).flat();
+  return arr.map(item => duplicate(item)).flat();
 }
 
 console.log(flatMap(arr)); // [ 1, 1, 1, 2, 2, 2 ]
