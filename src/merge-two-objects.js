@@ -38,7 +38,7 @@ const generateMerge = (obj1, obj2) => {
   return obj2;
 };
 
-const isObject = (obj) => obj && obj.contructor === Object;
+const isObject = obj => obj && obj.contructor === Object;
 
 console.log(merge(object, another));
 /**

@@ -4,7 +4,7 @@
 
 let arr = [0, 1, false, 2, "", 3];
 
-const compact = (arr) => arr.filter(Boolean);
+const compact = arr => arr.filter(Boolean);
 
 console.log(compact(arr)); // [ 1, 2, 3 ]
 

@@ -5,7 +5,7 @@
 const array = ["a", "b", "c", "a", "b", "c"];
 
 const pullAll = (arr, values) => {
-  return arr.filter((item) => !values.includes(item));
+  return arr.filter(item => !values.includes(item));
 };
 
 console.log(pullAll(array, ["a", "c"])); // [ 'b', 'b' ]

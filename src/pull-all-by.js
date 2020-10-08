@@ -5,9 +5,9 @@
 let array = [{ x: 1 }, { x: 2 }, { x: 3 }, { x: 1 }, { x: 10 }];
 
 const pullAllBy = (arr, values, identity) => {
-  return arr.filter((item) => {
+  return arr.filter(item => {
     if (
-      values.some((it) => JSON.stringify(it) === JSON.stringify(item)) === false
+      values.some(it => JSON.stringify(it) === JSON.stringify(item)) === false
     ) {
       return true;
     }

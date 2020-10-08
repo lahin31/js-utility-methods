@@ -15,16 +15,16 @@ function orderBy(arr, identity, order) {
   if (identity[0] === "user" && identity[1] === "age") {
     new_arr = new_arr.sort(userSort("age", order[1]));
     new_arr = new_arr.sort(userSort("user", order[0]));
-    return new_arr.map((item) => [item.user, item.age]);
+    return new_arr.map(item => [item.user, item.age]);
   } else if (identity[0] === "age" && identity[1] === "user") {
     new_arr = new_arr.sort(userSort("user", order[1]));
     new_arr = new_arr.sort(userSort("age", order[0]));
-    return new_arr.map((item) => [item.age, item.user]);
+    return new_arr.map(item => [item.age, item.user]);
   }
 }
 
 function userSort(item, type) {
-  return function (a, b) {
+  return function(a, b) {
     if (a[item] < b[item] && type === "asc") return -1;
     if (a[item] > b[item] && type === "asc") return 1;
     if (a[item] > b[item] && type === "desc") return -1;

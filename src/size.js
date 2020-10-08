@@ -6,7 +6,7 @@ const arr = [1, 2, 3];
 const obj = { a: 1, b: 2 };
 const text = "javascript";
 
-const size = (collection) => {
+const size = collection => {
   if (collection && collection.constructor === Object) {
     return Object.keys(collection).length;
   }

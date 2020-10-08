@@ -4,7 +4,7 @@
 let arr = [{ a: 1 }, { b: 2 }];
 let obj = { x: 20, y: 30 };
 
-let shallow = (val) => {
+let shallow = val => {
   if (Array.isArray(val)) return [...val];
   else if (val && val.constructor === Object) return { ...obj };
   return {};

@@ -11,19 +11,19 @@ let users = [
 const partition = (arr, identity) => {
   if (typeof identity === "function") {
     return [
-      ...[arr.filter((item) => identity(item))],
-      ...[arr.filter((item) => !identity(item))],
+      ...[arr.filter(item => identity(item))],
+      ...[arr.filter(item => !identity(item))],
     ];
   } else if (identity && identity.constructor === Object) {
     return [
       ...[
         arr.filter(
-          (item) => item.age === identity.age && item.active === identity.active
+          item => item.age === identity.age && item.active === identity.active
         ),
       ],
       ...[
         arr.filter(
-          (item) => item.age !== identity.age || item.active !== identity.active
+          item => item.age !== identity.age || item.active !== identity.active
         ),
       ],
     ];
@@ -31,19 +31,19 @@ const partition = (arr, identity) => {
     const key = identity[0];
     const value = identity[1];
     return [
-      ...[arr.filter((item) => item[key] === value)],
-      ...[arr.filter((item) => item[key] !== value)],
+      ...[arr.filter(item => item[key] === value)],
+      ...[arr.filter(item => item[key] !== value)],
     ];
   } else {
     return [
-      ...[arr.filter((item) => item[identity])],
-      ...[arr.filter((item) => !item[identity])],
+      ...[arr.filter(item => item[identity])],
+      ...[arr.filter(item => !item[identity])],
     ];
   }
 };
 
 console.log(
-  partition(users, function (o) {
+  partition(users, function(o) {
     return o.active;
   })
 );

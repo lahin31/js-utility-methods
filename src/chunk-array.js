@@ -9,7 +9,7 @@ function chunk(arr, size) {
     {
       length: Math.ceil(arr.length / size), // will create chunk containing undefined
     },
-    (_, i) => arr.slice(i * size, i * size + size)  // updating each index with slice
+    (_, i) => arr.slice(i * size, i * size + size) // updating each index with slice
   );
 }
 

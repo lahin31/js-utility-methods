@@ -11,28 +11,28 @@ const users = {
 const findKey = (obj, identity) => {
   if (typeof identity === "function") {
     let obj_values = Object.values(obj);
-    let index = obj_values.findIndex((item) => identity(item));
+    let index = obj_values.findIndex(item => identity(item));
     return Object.keys(obj)[index];
   } else if (identity && identity.constructor === Object) {
     let obj_values = Object.values(obj);
     let index = obj_values.findIndex(
-      (item) => JSON.stringify(item) === JSON.stringify(identity)
+      item => JSON.stringify(item) === JSON.stringify(identity)
     );
     return Object.keys(obj)[index];
   } else if (Array.isArray(identity)) {
     const key = identity[0];
     const value = identity[1];
     let obj_values = Object.values(obj);
-    let index = obj_values.findIndex((item) => item[key] === value);
+    let index = obj_values.findIndex(item => item[key] === value);
     return Object.keys(obj)[index];
   }
   let obj_values = Object.values(obj);
-  let index = obj_values.findIndex((item) => item[identity]);
+  let index = obj_values.findIndex(item => item[identity]);
   return Object.keys(obj)[index];
 };
 
 console.log(
-  findKey(users, function (o) {
+  findKey(users, function(o) {
     return o.age < 40;
   })
 ); // barney
